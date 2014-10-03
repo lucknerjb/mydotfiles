@@ -1,11 +1,9 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible  " Vim not VI
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -53,17 +51,19 @@ filetype plugin indent on    " required
 set tabstop=4
 set shiftwidth=4
 set expandtab "Turn tabs into spaces
-"Let's make sure that all the annoying bugs in VI are not displayed in VIM.
-set nocompatible
+
 "Let VIM figure out the indentation neede in C-style programs - when it can.
 set smartindent
+
 "VIM will show the corresponding opening and closing curly brace, bracket or parentesis.
 set showmatch
+
 "Display the status bar at the bottom 
 set ruler
+
 "Match words as we type a search string. We may be able to find the word we are looking for before being done typing.
 set incsearch
-"syntax on
+
 set backspace=indent,eol,start
 set number
 fixdel
